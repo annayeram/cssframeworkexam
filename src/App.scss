@@ -1,0 +1,42 @@
+$green: #097f74;
+$yellow: #fbb03b;
+$btn-color: #39b69f;
+
+$theme-colors: (
+  "primary": $green,
+);
+
+$colors: (
+  "green": $green,
+  "yellow": $yellow,
+);
+
+@import "~bootstrap/scss/bootstrap";
+
+.App {
+  text-align: center;
+  background-color: $yellow;
+  min-height: 100vh;
+  color: $green;
+}
+
+.main-container,
+.main-container .row {
+  height: 100vh;
+}
+
+.title {
+  margin-bottom: 1em;
+}
+
+.form-control-lg {
+  border-radius: 0;
+  padding: 1.5em 0.5em;
+  border: 1px solid black;
+}
+
+.submit-button {
+  padding: 1em 4em;
+  background-color: $btn-color;
+  border-color: white;
+}
